@@ -1,0 +1,140 @@
+.speaker-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    backdrop-filter: blur(8px);
+}
+
+.speaker-modal-panel {
+    position: relative;
+    width: 100%;
+    max-width: 56rem; /* 896px */
+    background-color: rgba(17, 24, 39, 0.9);
+    border: 1px solid #374151;
+    border-radius: 0.75rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    color: white;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.speaker-modal-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #9ca3af;
+    transition: color 0.3s, transform 0.3s;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+.speaker-modal-close-btn:hover {
+    color: #ffffff;
+    transform: rotate(90deg);
+}
+.speaker-modal-close-btn .icon {
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+.speaker-modal-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.speaker-modal-image-container {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.speaker-modal-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.speaker-modal-details {
+    text-align: center;
+}
+
+.speaker-modal-name {
+    font-size: 2.25rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #f97316, #ef4444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin: 0;
+}
+
+.speaker-modal-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #9ca3af;
+    margin-top: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.speaker-modal-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.speaker-modal-socials .social-link {
+    color: #9ca3af;
+    padding: 0.5rem;
+    transition: color 0.3s, transform 0.3s;
+}
+.speaker-modal-socials .social-link:hover {
+    color: #f97316;
+    transform: scale(1.1);
+}
+.speaker-modal-socials .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.speaker-modal-bio {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #d1d5db;
+    text-align: left;
+}
+
+
+@media (min-width: 768px) {
+    .speaker-modal-panel {
+        padding: 0;
+    }
+    .speaker-modal-content {
+        grid-template-columns: 1fr 2fr;
+        gap: 2.5rem;
+        padding: 3rem;
+        align-items: center;
+    }
+
+    .speaker-modal-image-container {
+        max-width: none;
+    }
+    .speaker-modal-details {
+        text-align: left;
+    }
+    .speaker-modal-socials {
+        justify-content: flex-start;
+    }
+}

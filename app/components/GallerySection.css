@@ -1,0 +1,39 @@
+.gallery-section {
+    padding: 0;
+    background-color: #000;
+    overflow: hidden;
+    cursor: default;
+}
+
+.gallery-row-wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.gallery-row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 200%; /* Because images are duplicated */
+    will-change: transform;
+}
+
+.gallery-image-container {
+    flex-shrink: 0;
+    width: auto;
+    height: 250px;
+    padding: 0;
+}
+
+.gallery-image {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .gallery-image-container {
+        height: 180px;
+        padding: 0;
+    }
+}
