@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Babylee Ent - Online Conferences: New Era Unfolds",
+  title: "Takeover At The Summit - Online Conferences: New Era Unfolds",
   description: "Join Babylee Ent for cutting-edge online conferences featuring world-class speakers, networking opportunities, and innovative insights. Building the future of events and conferences.",
   keywords: ["conference", "online events", "speakers", "networking", "Babylee Ent", "web development", "technology"],
   authors: [{ name: "Babylee Ent" }],
